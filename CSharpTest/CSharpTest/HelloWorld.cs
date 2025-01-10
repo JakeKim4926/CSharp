@@ -19,8 +19,42 @@ namespace CSharpTest
         NUM_6,
         NUM_7
     }
+    class TestClass
+    {
+        public TestClass() { }
+        public TestClass(int member) { this.member = member; }
+        public int member;
+        
+    }
+
     class HelloWorld
     {
+        static void refTest(ref int a, ref int b)
+        {
+            a = 3;
+            b = 7;
+        }
+
+        static int sum (params int[] args)
+        {
+            int nSum = 0;
+            foreach (int n in args)
+            {
+                nSum += n;
+            }
+
+            return nSum;
+        }
+
+        // 명명된 매개 변수
+        static void person(string name, int age)
+        {
+            WriteLine($"name : {name}, age: {age}");
+        }
+
+
+        // out 키워드의 경우 ref와 동일하지만 
+        // 따로 변수를 저장하지 않을 시 컴파일러가 에러 메시지 출력
         static void Main(string[] args)
         {
             WriteLine("여러분, 안녕하세요? \n반갑습니다!");
@@ -81,6 +115,39 @@ namespace CSharpTest
             WriteLine("{0}", dt);
             // 문자열 보간
             WriteLine($"{dt}");
+
+            // null 연산자
+            TestClass t1 = new TestClass(2);
+            TestClass t2 = new TestClass(4);
+
+            t1 = null;
+            int? nNullTest = null;
+            nNullTest = t1?.member;
+            WriteLine(nNullTest);
+            nNullTest = t2?.member;
+            WriteLine(nNullTest);
+
+            // for-each
+            int[] arr = new int[] { 0, 1, 2, 3, 4 };
+            foreach (int n in arr)
+            Console.Write(n + " ");
+            Console.WriteLine();
+
+            int nRefA = 1;
+            int nRefB = 2;
+
+            Console.WriteLine(nRefA);
+            Console.WriteLine(nRefB);
+
+            refTest(ref nRefA, ref nRefB);
+
+            Console.WriteLine(nRefA);
+            Console.WriteLine(nRefB);
+
+            Console.WriteLine(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+
+            person(age: 31, name: "Taek");
+            person(name: "Jake", age: 31);
 
             if (args.Length == 0)
             {

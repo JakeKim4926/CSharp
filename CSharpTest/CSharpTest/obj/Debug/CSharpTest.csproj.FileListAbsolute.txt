@@ -12,3 +12,10 @@ C:\Jake\CSharp\CSharpTest\CSharpTest\obj\Debug\CSharpTest.csprojAssemblyReferenc
 C:\Jake\CSharp\CSharpTest\CSharpTest\obj\Debug\CSharpTest.csproj.CoreCompileInputs.cache
 C:\Jake\CSharp\CSharpTest\CSharpTest\obj\Debug\CSharpTest.exe
 C:\Jake\CSharp\CSharpTest\CSharpTest\obj\Debug\CSharpTest.pdb
+D:\Jake\CSharp\CSharpTest\CSharpTest\bin\Debug\CSharpTest.exe.config
+D:\Jake\CSharp\CSharpTest\CSharpTest\bin\Debug\CSharpTest.exe
+D:\Jake\CSharp\CSharpTest\CSharpTest\bin\Debug\CSharpTest.pdb
+D:\Jake\CSharp\CSharpTest\CSharpTest\obj\Debug\CSharpTest.csproj.AssemblyReference.cache
+D:\Jake\CSharp\CSharpTest\CSharpTest\obj\Debug\CSharpTest.csproj.CoreCompileInputs.cache
+D:\Jake\CSharp\CSharpTest\CSharpTest\obj\Debug\CSharpTest.exe
+D:\Jake\CSharp\CSharpTest\CSharpTest\obj\Debug\CSharpTest.pdb
